@@ -1,0 +1,15 @@
+@charset "UTF-8";
+	#backimage {
+            width: 100%;
+            min-width:1400px;
+            height: 333px;
+            max-height:333px;
+            position:absolute;
+            background-size:100%;
+            background-image: url(../css/배경.jpg);
+            background-repeat:no-repeat;
+            left:0; top:0;
+            opacity:0.2;
+            z-index:-99;
+        }
+	

@@ -1,0 +1,43 @@
+DROP TABLE NOTICE;
+DROP SEQUENCE NOTICE_SEQ;
+
+CREATE SEQUENCE NOTICE_SEQ MAXVALUE 999999 NOCACHE NOCYCLE;
+CREATE TABLE NOTICE(
+    nNum NUMBER(6) PRIMARY KEY,
+    nTitle VARCHAR2(100) NOT NULL,
+    nContent VARCHAR2(300),
+    nDate DATE DEFAULT SYSDATE,
+    nHIT NUMBER(6) DEFAULT 0,
+    aId VARCHAR2(30) REFERENCES ADMINID(aId));
+    
+-- 더미데이터 (원글)
+INSERT INTO NOTICE (nNum, nTitle, nContent, nDate, nHit, aId)
+    VALUES (NOTICE_SEQ.NEXTVAL, '일부러 좀 길게 만든 제목 WWWWWWWWQWWQQWWWWW', 'content', SYSDATE, 0, 'ADMIN');
+SELECT * FROM NOTICE;
+commit;
+--bHIT 하나 올리기
+UPDATE NOTICE SET nHIT = nHIT +1 WHERE nNum=2;
+
+--bNum으로 글 DTO 보기
+SELECT * FROM NOTICE WHERE nNum=2;
+
+--글 수정하기 (NNUM, NTITLE, NCONTENT, NDATE)
+UPDATE NOTICE SET NTITLE = '제목',
+                           NCONTENT = '본문',
+                           NDATE = SYSDATE
+                           WHERE nNUM = 2;
+
+-- 특정글 삭제(id고려)
+DELETE FROM NOTICE WHERE NNUM=3 AND AID='ADMIN';
+
+--글 정보 가져오기
+SELECT * FROM NOTICE WHERE NNUM=1;
+
+-- 글갯수 
+SELECT COUNT(*) FROM NOTICE;
+
+-- 글목록 startRow endRow
+SELECT * FROM 
+        (SELECT ROWNUM RN, A.* FROM 
+            (SELECT * FROM NOTICE
+                ORDER BY NNUM DESC) A) WHERE RN BETWEEN 1 AND 4;

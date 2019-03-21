@@ -1,0 +1,38 @@
+@charset "UTF-8";
+		#wrap{width:1000px; margin: 0 auto;}
+		#con1{width:1000px; overflow: hidden; margin: 0 auto; z-index: -1;}
+		#con1 #login{width:200px; float:left; height: 310px;}
+		#con1 #login table{width:190px; border:2px dotted black; height: 140px; margin: 47px auto 0px;
+			border-radius: 10px; }
+		#con1 #login table .button{width: 180px; background-color: lightyellow; border: 1px solid lightgray;
+			height: 25px; line-height: 25px;}
+		#con1 #login table .submit{width: 180px; background-color: lightyellow; border: 1px solid lightgray;
+		height: 25px; line-height: 25px;}
+		#con1 #login p{margin:5px auto; padding:0 10px 5px 10px; font-size: 1.2em}
+		#con1 #notice{width: 500px; float:left; height: 310px;  z-index: -1;}
+		#con1 #notice h3{padding: 0 10px;}
+		#con1 #notice table{padding: 10px; table-layout:fixed; width: 480px; height:262px; background-color: lightyellow; margin: 0 auto;
+			border:1px double lightgray; border-radius: 10px;}
+		#con1 #notice table tr td{text-overflow:ellipsis; overflow:hidden; background-color: white; text-align: center;}
+		a{text-decoration: none; color:blue;}
+		#con1 #notice table tr th:nth-child(1){width:70% }
+		#con1 #notice table tr th:nth-child(2){width:15%  }
+		#con1 #notice table tr th:nth-child(3){width:15%  }
+		#con1 #calendar{width:300px; float:left; height: 310px;}
+		#con1 #calendar div {margin: 0 auto;}
+		#con1 #calendar p{text-align: center;}
+		
+		#search{width:1000px; margin: 0 auto; height: 100px;}
+		#search table{width:800px;}
+		#search h1{ padding:10px;}
+		.search{width:400px; height: 40px; border: 10px solid lightgray; font-size: 2em;}
+		.booksubmit{width: 60px; height: 60px; background-image: url('../css/search.png'); margin: 20px 5px;}
+		legend{font-size: 1.5em;}
+		#con2{overflow: hidden; margin: 0 auto; width:1000px;}
+		#con2 #book{width:900px; height: 280px; margin:0 auto;}
+		#con2 #book table{ table-layout:fixed; text-align: center; width:100%}
+		#con2 #book table tr td{width:25%; text-overflow:ellipsis; overflow:hidden;}
+		#con2 #book table tr td img { margin:0 auto; padding: 10px;}
+		#con2 #book table tr td a {text-align: center;}
+		#space{height: 100px;} 
+	
