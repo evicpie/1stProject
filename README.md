@@ -1,8 +1,9 @@
-±èÂù¾ç °³ÀÎ ÇÁ·ÎÁ§Æ® ¼Ò½º ÆÄÀÏµéÀÔ´Ï´Ù.
-ÇÁ·ÎÁ§Æ®¸í:
-Âü¿©ÀÎ¿ø: 1¸í
-±â°£	: 2019.03.06 ~ 2019.03.15
-°³¹ßÈ¯°æ:
+ê¹€ì°¬ì–‘ ê°œì¸ í”„ë¡œì íŠ¸ ì†ŒìŠ¤ íŒŒì¼ë“¤ìž…ë‹ˆë‹¤.
+í”„ë¡œì íŠ¸ëª…:
+ì°¸ì—¬ì¸ì›: 1ëª…
+ê¸°ê°„	: 2019.03.06 ~ 2019.03.15
+
+ê°œë°œí™˜ê²½:
 OS	 Windows 7 Professional K
 WAS	 Apache Tomcat 8.5
 DBMS	 Oracle 11g Express Edition
